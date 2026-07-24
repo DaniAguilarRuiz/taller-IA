@@ -211,7 +211,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 email: email,
                 telefono: telefono,
                //organizacion: document.getElementById('organizacion').value.trim() || 'No especificado',
-                profesion: document.getElementById('profesion').value.trim() || 'No especificado',
+                //profesion: document.getElementById('profesion').value.trim() || 'No especificado',
                 edad: document.getElementById('edad').value.trim() || 'No especificado',
                 ciudad: document.getElementById('ciudad').value.trim() || 'No especificado',
                 experiencia: document.querySelector('input[name="experiencia"]:checked')?.value || 'Ninguno',
