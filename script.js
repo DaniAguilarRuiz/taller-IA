@@ -210,7 +210,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 nombre: nombre,
                 email: email,
                 telefono: telefono,
-                organizacion: document.getElementById('organizacion').value.trim() || 'No especificado',
+               //organizacion: document.getElementById('organizacion').value.trim() || 'No especificado',
                 profesion: document.getElementById('profesion').value.trim() || 'No especificado',
                 edad: document.getElementById('edad').value.trim() || 'No especificado',
                 ciudad: document.getElementById('ciudad').value.trim() || 'No especificado',
@@ -265,6 +265,7 @@ document.addEventListener('DOMContentLoaded', () => {
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(payload)
     });
+    }
 
     function escapeHtml(str) {
         return str.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;").replace(/'/g, "&#039;");
