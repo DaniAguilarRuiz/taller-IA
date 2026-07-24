@@ -215,7 +215,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 edad: document.getElementById('edad').value.trim() || 'No especificado',
                 ciudad: document.getElementById('ciudad').value.trim() || 'No especificado',
                 experiencia: document.querySelector('input[name="experiencia"]:checked')?.value || 'Ninguno',
-                fuente: document.getElementById('fuente').value,
+                //fuente: document.getElementById('fuente').value,
                 expectativas: document.getElementById('expectativas').value.trim() || 'No especificado',
                 modalidad: '100% Presencial',
                 fechaRegistro: new Date().toISOString()
