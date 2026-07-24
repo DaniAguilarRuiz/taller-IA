@@ -257,6 +257,15 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
+    async function sendRegistrationDataToBackend(payload) {
+    const GOOGLE_SCRIPT_URL = "https://script.google.com/macros/s/AKfycbz0WBGi4U3e-DY3iK7xEKjWnX0V-J9vJtLTO_g9Cs1J0LaoayFenKZZ6f_0GdS5GImr3g/exec";
+    await fetch(GOOGLE_SCRIPT_URL, {
+        method: "POST",
+        mode: "no-cors",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(payload)
+    });
+
     function escapeHtml(str) {
         return str.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;").replace(/'/g, "&#039;");
     }
