@@ -225,6 +225,8 @@ document.addEventListener('DOMContentLoaded', () => {
             submitBtn.innerHTML = `<i class="fa-solid fa-spinner fa-spin"></i> <span>Procesando...</span>`;
 
             try {
+                    await sendRegistrationDataToBackend(formData);
+
                 await new Promise((resolve) => setTimeout(resolve, 700));
 
                 confirmationSummary.innerHTML = `
